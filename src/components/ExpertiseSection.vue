@@ -11,13 +11,8 @@
       </div>
 
       <div class="expertise-grid">
-        <div 
-          v-for="(item, index) in expertiseItems" 
-          :key="index"
-          class="expertise-card" 
-          data-aos="fade-up" 
-          :data-aos-delay="index * 100"
-        >
+        <div v-for="(item, index) in expertiseItems" :key="index" class="expertise-card" data-aos="fade-up"
+          :data-aos-delay="index * 100">
           <div class="card-number">{{ item.number }}</div>
           <div class="card-icon">
             <i :class="item.icon"></i>
@@ -26,11 +21,7 @@
           <div class="card-divider"></div>
           <p class="card-text">{{ item.text }}</p>
           <div class="card-tags">
-            <span 
-              v-for="tag in item.tags" 
-              :key="tag"
-              class="tag"
-            >
+            <span v-for="tag in item.tags" :key="tag" class="tag">
               {{ tag }}
             </span>
           </div>
@@ -47,9 +38,9 @@ const expertiseItems = [
   {
     number: '01',
     icon: 'bi bi-mortarboard-fill',
-    title: 'Professional Foundation & Excellence',
-    text: 'Developed comprehensive technical expertise through intensive professional training at Scrumad Company, mastering full-stack web development under expert guidance. This transformative journey encompassed advanced frontend frameworks, robust backend architecture, database optimization, and industry-standard development practices—Alhamdulillah for the opportunity to pursue knowledge and professional growth with dedication and integrity.',
-    tags: ['Full Stack Engineering', 'Professional Mentorship']
+    title: 'Professional Excellence at Scrumad Company',
+    text: 'Alhamdulillah, blessed with the opportunity to embark on a transformative two-year journey at Scrumad Company, where I developed comprehensive technical expertise through intensive professional training and expert mentorship. Mastered full-stack web development encompassing advanced frontend frameworks (HTML5, CSS3, JavaScript, Vue.js), robust backend architecture (Laravel, PHP, MySQL), API development, and industry-standard practices. This dedicated pursuit of knowledge, guided by the principle of excellence in all endeavors, has shaped me into a versatile developer committed to continuous growth and delivering impactful solutions.',
+    tags: ['Full Stack Engineering', 'Professional Mentorship', '2 Years Experience']
   },
   {
     number: '02',
