@@ -2,7 +2,7 @@
   <div class="page-loader" :class="{ hidden: !loading }">
     <div class="loader-content">
       <div class="loader-logo">
-        <img src="/sd.png" alt="SD" />
+        <img src="/sd-2.png" alt="SD" />
       </div>
       <div class="loader-text">Loading</div>
       <div class="loader-bar">

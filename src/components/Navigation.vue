@@ -3,7 +3,7 @@
     <div class="nav-container">
       <a href="#home" class="nav-brand" @click.prevent="scrollToSection('home')">
         <div class="brand-icon">
-          <img src="/sd.png" alt="Saqib Din" />
+          <img src="/sd-2.png" alt="Saqib Din" />
           <div class="brand-glow"></div>
         </div>
         <div class="brand-info d-flex flex-column lh-sm" style="display: flex; flex-direction: column; line-height: 1.3;">
