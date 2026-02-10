@@ -1,47 +1,51 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="portfolio-supreme">
+    <!-- Background Effects -->
+    <ImmersiveBackground />
+    <NoiseOverlay />
+    <GridOverlay />
 
-    <div class="wrapper">
-      <HelloWorld msg="Saqib Din!" />
-    </div>
-  </header>
+    <!-- Custom Cursor -->
+    <CustomCursor />
 
-  <main>
-    <TheWelcome />
-  </main>
+    <!-- Page Loader -->
+    <PageLoader :loading="loading" />
+
+    <!-- Navigation -->
+    <Navigation />
+
+    <!-- Sections -->
+    <HeroSection />
+    <AboutSection />
+    <ExpertiseSection />
+    <WorksSection />
+    <SkillsSection />
+    <ContactSection />
+    <FooterSection />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<script setup>
+import { ref, onMounted } from 'vue'
+import ImmersiveBackground from './components/ImmersiveBackground.vue'
+import NoiseOverlay from './components/NoiseOverlay.vue'
+import GridOverlay from './components/GridOverlay.vue'
+import CustomCursor from './components/CustomCursor.vue'
+import PageLoader from './components/PageLoader.vue'
+import Navigation from './components/Navigation.vue'
+import HeroSection from './components/HeroSection.vue'
+import AboutSection from './components/AboutSection.vue'
+import ExpertiseSection from './components/ExpertiseSection.vue'
+import WorksSection from './components/WorksSection.vue'
+import SkillsSection from './components/SkillsSection.vue'
+import ContactSection from './components/ContactSection.vue'
+import FooterSection from './components/FooterSection.vue'
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+const loading = ref(true)
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+onMounted(() => {
+  setTimeout(() => {
+    loading.value = false
+  }, 2000)
+})
+</script>
