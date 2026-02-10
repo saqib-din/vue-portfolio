@@ -18,20 +18,18 @@
         <div class="about-content" data-aos="fade-right">
           <div class="content-card">
             <p class="text-lead">
-              I am <strong>Saqib Din</strong>, a dedicated full-stack
-              developer committed to crafting meaningful digital solutions
-              that serve both technical excellence and human purpose.
-              Alhamdulillah, I approach each project as an opportunity to
-              apply knowledge with integrity, deliver value with precision,
-              and contribute positively to the digital landscape.
+              As a dedicated full-stack developer, I'm committed to crafting
+              meaningful digital solutions that serve both technical excellence
+              and human purpose. Alhamdulillah, I approach each project as an
+              opportunity to apply knowledge with integrity, deliver value with
+              precision, and contribute positively to the digital landscape.
             </p>
 
             <p class="text-body">
               My professional foundation encompasses comprehensive expertise
               in modern web technologies—from building scalable backend
-              systems with
-              <strong>Laravel and MySQL</strong> to developing responsive,
-              user-centric interfaces using
+              systems with <strong>Laravel and MySQL</strong> to developing
+              responsive, user-centric interfaces using
               <strong>HTML5, CSS3, and JavaScript</strong>. Through
               continuous learning and practice, I strive to merge technical
               competence with thoughtful problem-solving and ethical
@@ -75,11 +73,7 @@
           </div>
 
           <div class="values-grid">
-            <div 
-              v-for="value in values" 
-              :key="value.title"
-              class="value-card"
-            >
+            <div v-for="value in values" :key="value.title" class="value-card">
               <div class="value-icon">
                 <i :class="value.icon"></i>
               </div>

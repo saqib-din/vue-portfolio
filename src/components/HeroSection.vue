@@ -83,10 +83,7 @@
 
           <div class="visual-image">
             <div class="image-glow"></div>
-            <img
-              src="/WhatsApp Image 2024-07-21 at 03.11.09_a021493a.jpg"
-              alt="Saqib Din"
-            />
+            <img src="/WhatsApp Image 2024-07-21 at 03.11.09_a021493a.jpg" alt="Saqib Din" />
             <div class="image-overlay"></div>
           </div>
         </div>
