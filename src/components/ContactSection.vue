@@ -38,7 +38,7 @@
         <div class="contact-card" data-aos="fade-left">
           <div class="contact-profile">
             <div class="profile-image">
-              <img src="/sd.png" alt="Saqib Din" />
+              <img src="/s1.png" alt="Saqib Din" />
               <div class="profile-ring"></div>
             </div>
             <h3 class="profile-name">Saqib Din</h3>
