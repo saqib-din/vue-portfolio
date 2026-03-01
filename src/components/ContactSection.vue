@@ -24,11 +24,7 @@
             I'm here to help transform your vision into reality.
           </p>
           <div class="contact-benefits">
-            <div 
-              v-for="benefit in benefits" 
-              :key="benefit"
-              class="benefit-item"
-            >
+            <div v-for="benefit in benefits" :key="benefit" class="benefit-item">
               <i :class="benefit.icon"></i>
               <span>{{ benefit.text }}</span>
             </div>
@@ -50,21 +46,13 @@
           </div>
 
           <div class="contact-info">
-            <div 
-              v-for="info in contactInfo" 
-              :key="info.label"
-              class="info-item"
-            >
+            <div v-for="info in contactInfo" :key="info.label" class="info-item">
               <div class="info-icon">
                 <i :class="info.icon"></i>
               </div>
               <div class="info-content">
                 <span class="info-label">{{ info.label }}</span>
-                <a 
-                  v-if="info.link" 
-                  :href="info.link" 
-                  class="info-value"
-                >
+                <a v-if="info.link" :href="info.link" class="info-value">
                   {{ info.value }}
                 </a>
                 <span v-else class="info-value">{{ info.value }}</span>
@@ -98,8 +86,8 @@ const contactInfo = [
   {
     icon: 'bi bi-telephone-fill',
     label: 'Phone',
-    value: '+92 312 8336290',
-    link: 'tel:+923128336290'
+    value: '+92 316 8336096',
+    link: 'tel:+923168336096'
   },
   {
     icon: 'bi bi-envelope-fill',

@@ -6,34 +6,24 @@
           <img src="/s1.png" alt="Saqib Din" />
           <div class="brand-glow"></div>
         </div>
-        <div class="brand-info d-flex flex-column lh-sm" style="display: flex; flex-direction: column; line-height: 1.3;">
+        <div class="brand-info d-flex flex-column lh-sm"
+          style="display: flex; flex-direction: column; line-height: 1.3;">
           <span class="brand-name">Saqib Din</span>
           <span class="brand-title">Laravel Artisan</span>
         </div>
       </a>
 
       <div class="nav-links" :class="{ active: menuActive }">
-        <a 
-          v-for="link in navLinks" 
-          :key="link.id"
-          :href="`#${link.id}`" 
-          class="nav-link" 
-          :class="{ 'nav-cta': link.cta, active: activeSection === link.id }"
-          :data-text="link.text"
-          @click.prevent="handleNavClick(link.id)"
-        >
+        <a v-for="link in navLinks" :key="link.id" :href="`#${link.id}`" class="nav-link"
+          :class="{ 'nav-cta': link.cta, active: activeSection === link.id }" :data-text="link.text"
+          @click.prevent="handleNavClick(link.id)">
           <span v-if="!link.cta">{{ link.number }}</span>
           {{ link.text }}
           <i v-if="link.cta" class="bi bi-arrow-right"></i>
         </a>
       </div>
 
-      <button 
-        class="nav-toggle" 
-        :class="{ active: menuActive }"
-        aria-label="Toggle Menu"
-        @click="toggleMenu"
-      >
+      <button class="nav-toggle" :class="{ active: menuActive }" aria-label="Toggle Menu" @click="toggleMenu">
         <span></span>
         <span></span>
         <span></span>

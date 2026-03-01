@@ -20,16 +20,16 @@ const showCursor = ref(false)
 const dotStyle = computed(() => ({
   left: `${mouseX.value}px`,
   top: `${mouseY.value}px`,
-  transform: isHovering.value 
-    ? 'translate(-50%, -50%) scale(2)' 
+  transform: isHovering.value
+    ? 'translate(-50%, -50%) scale(2)'
     : 'translate(-50%, -50%) scale(1)'
 }))
 
 const outlineStyle = computed(() => ({
   left: `${outlineX.value - 20}px`,
   top: `${outlineY.value - 20}px`,
-  transform: isHovering.value 
-    ? 'translate(0, 0) scale(1.5)' 
+  transform: isHovering.value
+    ? 'translate(0, 0) scale(1.5)'
     : 'translate(0, 0) scale(1)'
 }))
 

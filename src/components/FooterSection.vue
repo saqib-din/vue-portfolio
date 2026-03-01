@@ -8,15 +8,8 @@
       </div>
 
       <div class="social-links">
-        <a 
-          v-for="social in socialLinks" 
-          :key="social.name"
-          :href="social.url" 
-          target="_blank" 
-          rel="noopener" 
-          class="social-link"
-          :aria-label="social.name"
-        >
+        <a v-for="social in socialLinks" :key="social.name" :href="social.url" target="_blank" rel="noopener"
+          class="social-link" :aria-label="social.name">
           <i :class="social.icon"></i>
         </a>
       </div>

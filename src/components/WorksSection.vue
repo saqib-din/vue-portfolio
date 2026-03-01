@@ -37,22 +37,14 @@
               a secure, role-based system.
             </p>
             <div class="project-features">
-              <div 
-                v-for="feature in featuredProject.features" 
-                :key="feature"
-                class="feature-item"
-              >
+              <div v-for="feature in featuredProject.features" :key="feature" class="feature-item">
                 <i class="bi bi-check-circle-fill"></i>
                 <span>{{ feature }}</span>
               </div>
             </div>
             <div class="project-tech">
-              <span 
-                v-for="tech in featuredProject.tech" 
-                :key="tech"
-                class="tech-tag"
-                :class="{ primary: tech === 'Laravel 12' }"
-              >
+              <span v-for="tech in featuredProject.tech" :key="tech" class="tech-tag"
+                :class="{ primary: tech === 'Laravel 12' }">
                 {{ tech }}
               </span>
             </div>
@@ -62,13 +54,8 @@
 
       <!-- Other Projects Grid -->
       <div class="projects-grid">
-        <div 
-          v-for="project in projects" 
-          :key="project.number"
-          class="project-card" 
-          data-aos="fade-up" 
-          :data-aos-delay="(parseInt(project.number) - 2) * 100"
-        >
+        <div v-for="project in projects" :key="project.number" class="project-card" data-aos="fade-up"
+          :data-aos-delay="(parseInt(project.number) - 2) * 100">
           <div class="project-header">
             <div class="project-number">{{ project.number }}</div>
             <div class="project-icon">
@@ -78,11 +65,7 @@
           <h3 class="project-title">{{ project.title }}</h3>
           <p class="project-description">{{ project.description }}</p>
           <div class="project-tech">
-            <span 
-              v-for="tech in project.tech" 
-              :key="tech"
-              class="tech-tag"
-            >
+            <span v-for="tech in project.tech" :key="tech" class="tech-tag">
               {{ tech }}
             </span>
           </div>
