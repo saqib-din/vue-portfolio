@@ -38,7 +38,7 @@
               <div class="profile-ring"></div>
             </div>
             <h3 class="profile-name">Saqib Din</h3>
-            <p class="profile-role">Full Stack Developer & Laravel Artisan</p>
+            <p class="profile-role">Full Stack Developer</p>
             <div class="profile-status">
               <span class="status-dot"></span>
               <span>Available for Projects</span>
